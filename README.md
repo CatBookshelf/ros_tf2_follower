@@ -14,23 +14,26 @@ The process for this package to be installed on your ros environment is easy, an
 3. Clone this repository to your src folder
 
 ## Running and obtaining data
-#### Launching the package scripts
+### Launching the package scripts
 There is only one command to be executed for the user to launch the package: 
 
 ```bash
 $ roslaunch ros_tf2_follower turtle_tf2_demo2.launch 
 ```
 
-#### Controlling the turtle1 
+### Controlling the turtle1 
 The control keys for the movement of the turtle are as follows:
 - Arrow key up : Allows the turtle to go forwards.
 - Arrow key down : Allows the turtle to go backwards.
 - Arrow key left : Allows the turtle to turn counter clockwise.
 - Arrow key right : Allows the turtle to turn clockwise.  
-#### Obtaining the amount of collisions
+### Obtaining the amount of collisions
 The amount of collisions of the first turtle are being stored and published on a topic, so if you want to recover the amount of collisions the turtle1 has had with the walls you just have to subscribe to the topic ***/turtle1/collisions***, either in another script, or by echoing the topic with the following command:
 
 ```bash
 $ rostopic echo /turtle1/collisions
 ```
 
+## Relation graphs
+![frames_graph](https://github.com/CatBookshelf/ros_tf2_follower/tree/main/imgs/frames_graph_capture.png)
+![rqt_graph](https://github.com/CatBookshelf/ros_tf2_follower/tree/main/imgs/rqt_graph_capture.png)
