@@ -53,6 +53,18 @@ include_directories(
 #   scripts/my_python_script
 #   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
+catkin_install_python(PROGRAMS src/turtle_tf2_broadcaster.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+catkin_install_python(PROGRAMS src/turtle_tf2_listener.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+catkin_install_python(PROGRAMS src/turtle_tf2_listener2.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 catkin_install_python(PROGRAMS src/n_collisions.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
